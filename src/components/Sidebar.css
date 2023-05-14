@@ -1,0 +1,30 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,rgb(255, 239, 220) 5%, bisque 50%);
+    width: 300px;
+    margin: 1vh;
+    border-radius: 10px;
+    height: 98vh;
+}
+
+.sidebar > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: contain;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

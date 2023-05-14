@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import About from './components/About';
+import Sidebar from './components/Sidebar';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    fetch('https://gitconnected.com/v1/portfolio/emanuelnjegovec')
+      .then(res => res.json())
+      .then(user => {
+        setUser(user);
+      });
+  }, []);
+
+  return ( user ? 
+    <main>
+      <div id='thing1'>
+        <Sidebar />
+      </div>
+      <div id='thing2'>
+        <About user={user.basics} />
+        <Projects user={user.projects} />
+        <Skills user={user.skills} />
+        <Contact />
+      </div>
+    </main> : null
   );
 }
 

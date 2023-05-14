@@ -1,0 +1,11 @@
+.projects-wrapper {
+    background-color: bisque;
+    margin: 20px;
+    border-radius: 10px;
+    height: 100vh;
+}
+
+.inner-projects-wrapper {
+    display: flex;
+    flex-flow: wrap;
+}
