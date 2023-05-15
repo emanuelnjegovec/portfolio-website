@@ -6,6 +6,9 @@ export default function SkillCard(skill) {
         <div className='skill-container'>
             <img src={url} alt='skill-image'/>
             <h4>{ skill.name }</h4>
+            <div>
+                
+            </div>
         </div>
     )
 }

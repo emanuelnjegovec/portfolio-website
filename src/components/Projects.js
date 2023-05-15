@@ -3,7 +3,7 @@ import './Projects.css'
 
 export default function Projects(projects) {
     return (
-        <div className="projects-wrapper" id='projects'>
+        <div className="projects-wrapper section" id='projects'>
             <h2>PROJECTS</h2>
             <hr></hr>
             <div className='inner-projects-wrapper'>

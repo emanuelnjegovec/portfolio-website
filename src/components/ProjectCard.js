@@ -7,6 +7,16 @@ export default function ProjectCard(project) {
         <div className='project-container'>
             <img src={url} alt='project-image'/>
             <h3>{project.name}</h3>
+            <div>
+                <button className="button">
+                    <img className='btn-image' src='/github-icon.png'/>
+                    <div className="fill-container"></div>
+                </button>
+                <button className="button">
+                    <img className='btn-image' src='/link-icon.png'/>
+                    <div className="fill-container"></div>
+                </button>
+            </div>
         </div>
     )
 }
