@@ -35,7 +35,7 @@ export default function Sidebar() {
     return (
         <div className='sidebar'>
             <img src="/placeholder_large.png" alt="profile"/>
-            <ul>
+            <ul className='desktop-nav'>
                 <li className='about active'><a href='#about'>ABOUT</a></li>
                 <li className='projects'><a href='#projects'>PROJECTS</a></li>
                 <li className='skills'><a href='#skills'>SKILLS</a></li>

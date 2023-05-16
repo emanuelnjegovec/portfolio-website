@@ -4,7 +4,9 @@ import Sidebar from './components/Sidebar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import useBreakpoints from './components/useBreakpoints';
 import './App.css';
+import MobileNav from './components/MobileNav';
 
 function App() {
 
@@ -17,12 +19,16 @@ function App() {
       });
   }, []);
 
+  const {isXs, isSm} = useBreakpoints();
+
   return ( user ? 
     <main>
-      <div id='thing1'>
+      {isXs || isSm ? <></> : <div id='thing1'>
         <Sidebar />
-      </div>
+      </div>}
+      
       <div id='thing2'>
+        {isXs || isSm ? <MobileNav /> : <></>}
         <About user={user.basics} />
         <Projects user={user.projects} />
         <Skills user={user.skills} />
