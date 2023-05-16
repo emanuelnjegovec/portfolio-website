@@ -19,7 +19,6 @@ export default function Contact() {
 
     const submitEmail = async (e) => {
         e.preventDefault();
-        console.log({ mailerState });
         const response = await fetch("http://localhost:3001/send", {
           method: "POST",
           headers: {
@@ -57,7 +56,7 @@ export default function Contact() {
                     <input type="email" name="email" placeholder="E-mail" onChange={handleStateChange} value={mailerState.email} required/>
                     <input type="text" placeholder="Subject" required/>
                     <textarea placeholder="Message" name="message" onChange={handleStateChange} value={mailerState.message} required/>
-                    <input type="submit" value="Send"/>
+                    <input type="submit" value="SEND"/>
                 </form>
             </div>
         </div>

@@ -3,6 +3,7 @@
     margin: 20px;
     border-radius: 10px;
     height: 70vh;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form-container {
@@ -10,6 +11,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 }
 
 form {
@@ -29,13 +37,20 @@ form > input, form > textarea {
     box-shadow: 1px 1px 5px 1px gray;
     height: 40px;
     width: 100%;
+    padding-left: 10px;
 }
 
 form > textarea {
     height: 120px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input:last-child {
+    font-weight: 700;
+    font-size: large;
+    color: rgb(131, 89, 38);
+    padding-left: 0px;
     width: 50%;
     cursor: pointer;
     background-color: rgb(250, 220, 183);

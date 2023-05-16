@@ -2,10 +2,19 @@
     background-color: rgb(248, 248, 248);
     margin: 20px;
     border-radius: 10px;
-    height: 50vh;
+    height: fit-content;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
 }
 
 .inner-skills-wrapper {
     display: flex;
     flex-wrap: wrap;
+}
+
+h3 {
+    margin-left: 15px;
+}
+
+hr {
+    width: 97%;
 }

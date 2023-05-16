@@ -9,6 +9,7 @@
     margin: 1vh;
     border-radius: 10px;
     height: 98vh;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar > img {

@@ -3,6 +3,7 @@
     margin: 20px;
     border-radius: 10px;
     height: 100vh;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
 }
 
 .inner-projects-wrapper {

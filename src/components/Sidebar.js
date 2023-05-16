@@ -30,7 +30,7 @@ export default function Sidebar() {
         return() => {
             window.removeEventListener('scroll', onScroll);
         }
-    }, [window.scrollY]);
+    });
 
     return (
         <div className='sidebar'>

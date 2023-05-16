@@ -4,8 +4,12 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    border: 2px solid rgb(255, 152, 83);
+    background-color: rgb(250, 209, 159);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
 }
 
 .skill-container > img {
