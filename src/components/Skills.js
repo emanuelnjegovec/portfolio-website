@@ -15,9 +15,6 @@ export default function Skills(skills) {
         el.keywords[0] === 'database'
     );
 
-    console.log(prog_lang);
-    console.log(other_lang);
-
     return (
         <div className="skills-wrapper section" id='skills'>
             <h2>SKILLS</h2>
